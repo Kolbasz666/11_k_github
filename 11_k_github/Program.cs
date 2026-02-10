@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("github");
+            List<Diszno> disznok = FileManager.ReadFile("disznok2.csv");
+            Console.WriteLine(String.Join('\n',disznok));
         }
     }
 }
